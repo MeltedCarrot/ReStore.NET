@@ -7,7 +7,7 @@ function Catalog() {
 
   useEffect(() => {
     async function fetchData() {
-      let response = await fetch('https://localhost:7139/api/Products');
+      let response = await fetch('https://localhost:7139/api/products');
       let data = await response.json();
       setProducts(data);
     }
